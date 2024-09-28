@@ -2,75 +2,58 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h4 {
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 8px;
-    display: block;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 8px;
-    display: block;
-}
-
-p {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 8px;
-    display: block;
-}
-
-h3 {
-    text-align: center;
-    font-weight: 500;
-}
 
 a {
     color: black;
     text-decoration: none;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.secao-logo {
+    display: flex;
+    align-items: center;
+}
+
+.texto-snkers {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.menu-items a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.icones-nav {
+    display: flex;
+    align-items: center;
+}
+
+.icones-secao {
+    width: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.botoes {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
 .container {
-    margin: 0px;
-    padding: 0px;
-    display: block;
-}
-
-.header1-1{
-    display: inline-block;
-    margin-left: 2%;
-    font-weight: 400px;
-    line-height: 1.5px;
-}
-
-.header1-2{
-    display: inline-block;
-    margin-left: 75%;
-}
-
-#sneakers {
-    width: 50px;
-    height: 50px;
-    margin-left: 2%;
-}
-
-.header2-1 {
-    display: inline-block;
-    margin-left: 2%;
-}
-
-.header2-2 {
-    display: inline-block;
-    margin-left: 40%;
-}
-
-.container2 {
     display: inline-block;
     margin-left: 15%;
     margin-right: 15%;
@@ -92,7 +75,7 @@ a {
 }
 
 .conjunto2 {
-    margin-top: -28%;
+    margin-top: -25.5%;
 }
 
 .textos {
@@ -118,7 +101,7 @@ a {
     border-radius: 5px;
 }
 
-.botões {
+.botoes-comprar {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
@@ -159,17 +142,75 @@ a {
     cursor: pointer;
 }
 
-.icon {
+.icones-compartilhar {
     width: 16px;
     height: 16px;
     margin-right: 8px;
 }
 
+
 footer{
+    width: 100%;
+    color: white;
     background-color: black;
+    margin: 0%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content {
+    margin-left: 210px;
+    margin-right: 210px;
+    padding: 40px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 198rem);
+    gap: 24rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.secoes {
     display: flex;
-    justify-content: space-around;
-    margin: 0px;
-    padding: 200px;
-    margin-top: 90%;
+    flex-direction:row;
+    gap: 50px;
+    list-style: none;
+}
+
+.secao1 {
+    list-style: none;
+    line-height: 2;
+}
+
+.secao2 {
+    list-style: none;
+}
+
+.secao3 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.rede-app {
+    display: block;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2px;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5em;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
 }

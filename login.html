@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/4202853_nike_icon.png" type="image/x-icon">
+    <title>Boas-vindas à Nike - Entrar</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1><a href="/index.html" id="voltar-produto">Voltar</a></h1>
+            <div class="imgs-secao">    
+                <img src="/img/nike.png" alt="Logo nike">
+                <img src="/img/jordan logo.png" alt="Jordan logo">
+            </div>
+        </nav>
+        <div class="entrar-email">
+            <form id="forms" action="login.html">
+                <label for="txtEmail"><h1>Insira seu e-mail para se inscrever ou entrar.</h1></label>
+                <br>
+                <input type="email" placeholder="E-mail*" id="txtEmail" name="txtEmail">
+                <br>
+                <div class="politica-termo">
+                    <p>Ao continuar, afirmo que concordo com a <a href="#">Política de privacidade</a> e os 
+                        <a href="">Termos de uso da Nike.</a>
+                    </p>
+                </div>
+                <button type="submit" onclick="cadastraEmail()">Continuar</button>
+            </form>
+            <span id="cadastro"></span>
+        </div>
+    </div>
+<script>
+    function cadastraEmail() {
+    var email = document.getElementById("txtEmail").value;
+
+    if (email.length == 0) {
+        alert("Digite um e-mail válido, por favor!");
+    }  else {
+        var aviso = document.getElementById("cadastro");
+        aviso.innerHTML = `E-mail enviado para ${email}`;
+
+    }
+}
+</script>      
+</html>

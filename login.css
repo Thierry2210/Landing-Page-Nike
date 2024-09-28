@@ -1,0 +1,73 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#voltar-produto {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px white;
+    text-align: left;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px ;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.imgs-secao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    max-width: 10%;   
+}
+
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+    border-color: black;
+}
+
+button {
+    background-color: #000000;
+    color: white ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 150px;
+}
+
+.politica-termo{
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+}
+
+.politica-termo a {
+    color: rgb(117, 117, 117); 
+}
